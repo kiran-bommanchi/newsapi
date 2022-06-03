@@ -26,6 +26,7 @@ const Search = () => {
 useEffect(()=>{
   const requiredData = buttons.find((data)=> data?.categoryName===active)
   requiredData && fetchData(requiredData.url)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 },[active,buttons])
 
 
